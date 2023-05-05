@@ -63,6 +63,7 @@ jobs:
         echo "export MAKEFILE=${{ github.event.inputs.MAKEFILE_NAME }}" >> config.sh
         echo "export TARGET=${{ github.event.inputs.BUILD_TARGET }}image" >> config.sh
         echo "export OUTPUT=${{ github.event.inputs.BUILD_TARGET }}.img" >> config.sh
+        echo "export RANDOM=${RANDOM}" >> config.sh
         echo "::endgroup::"
         cat config.sh
 
