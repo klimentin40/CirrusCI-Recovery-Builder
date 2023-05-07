@@ -3,11 +3,11 @@
 - Support ~~OFRP~~, SHRP, TWRP compilation and production
 
 # Must Set github token secret 
-Name*: GH_TOKEN
-Secret*: Your Github Token (with push permissions)
+'Name: GH_TOKEN'
+'Secret: Your Github Token (with push permissions)'
 
 # Must Setup Cirrus-CI from github marketplace
-
+Setup Cirrus-CI From [Github-MarketPlace](https://github.com/marketplace/cirrus-ci)
 ---
 - Based On Action Recovery Builder
 
@@ -27,15 +27,16 @@ Secret*: Your Github Token (with push permissions)
 | `COMMON_PATH` | Common tree location | device/asus/sm8250-common |
 | `DEVICE_NAME` | Model name | fleur |
 | `MAKEFILE_NAME` | Makefile name | twrp_fleur |
-| `BUILD_TARGET` | Build Target Partition (boot/recovery/vendorboot) | recovery |
+| `BUILD_TARGET` | Build Target Partition (boot/recovery/vendorboot) | boot |
 -----
 
 ## Compilation results
-Download Link Can Be Found on Cirrus-ci.com in upload_script logs
+Download Link Can Be Found on [CirrusCI](https://cirrus-ci.com) in upload_script logs
 
 -----
 ## Remark
 
 #### TeamWin Recovery Project: https://github.com/minimal-manifest-twrp
 #### OrangeFox Recovery Project: https://gitlab.com/OrangeFox/Manifest
+#### Pitch Black Recovery Project: https://github.com/PitchBlackRecoveryProject/manifest_pb
 #### SKYHAWK Recovery Project: https://github.com/SHRP/platform_manifest_twrp_omni

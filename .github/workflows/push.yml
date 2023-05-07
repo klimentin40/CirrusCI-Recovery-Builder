@@ -26,9 +26,6 @@ on:
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
-      COMMON_PATH:
-        description: 'COMMON_PATH (if no common tree, leave blank)'
-        required: false
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
@@ -41,6 +38,10 @@ on:
         description: 'BUILD_TARGET'
         required: true
         default: 'boot'
+      ALT_ZIP:
+        description: 'ALT_ZIP (if you want to upload other files such as O*.zip , P*.zip else leave it "empty" )'
+        required: true
+        default: 'empty'
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
@@ -63,6 +64,7 @@ jobs:
         echo "export MAKEFILE=${{ github.event.inputs.MAKEFILE_NAME }}" >> config.sh
         echo "export TARGET=${{ github.event.inputs.BUILD_TARGET }}image" >> config.sh
         echo "export OUTPUT=${{ github.event.inputs.BUILD_TARGET }}.img" >> config.sh
+        echo "export ALT_FILE=${{ github.event.inputs.ALT_ZIP }}" >> config.sh
         echo "export RANDOM=${RANDOM}" >> config.sh
         echo "::endgroup::"
         cat config.sh
