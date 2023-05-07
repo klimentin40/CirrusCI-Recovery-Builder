@@ -8,4 +8,5 @@ export DEVICE=fleur
 export MAKEFILE=twrp_fleur
 export TARGET=bootimage
 export OUTPUT=boot.img
-export RANDOM=3654
+export ALT_FILE=empty
+export RANDOM=21020
