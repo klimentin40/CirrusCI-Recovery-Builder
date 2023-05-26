@@ -9,4 +9,4 @@ export MAKEFILE=twrp_tulip
 export TARGET=recoveryimage
 export OUTPUT=recovery.img
 export ALT_FILE=empty
-export RANDOM=23410
+export RANDOM=16650
