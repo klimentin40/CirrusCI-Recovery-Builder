@@ -9,4 +9,4 @@ export MAKEFILE=twrp_selene
 export TARGET=bootimage
 export OUTPUT=boot.img
 export ALT_FILE=empty
-export RANDOM=21392
+export RANDOM=20473
