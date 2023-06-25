@@ -37,7 +37,7 @@ on:
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'recoveryimage'
+        default: 'recovery'
       ALT_ZIP:
         description: 'ALT_ZIP (if you want to upload other files such as O*.zip , P*.zip else leave it "empty" )'
         required: true
