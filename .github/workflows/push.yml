@@ -14,30 +14,30 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/ShazuxD/device_xiaomi_fleur-twrp'
+        default: 'https://github.com/klimentin40/android_device_rockchip_rk3328_box'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'twrp-12.1'
+        default: 'A12'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/fleur'
+        default: 'device/rockchip/rk3328_box'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'fleur'
+        default: 'rk3328_box'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_fleur'
+        default: 'twrp_rk3328_box'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'boot'
+        default: 'recoveryimage'
       ALT_ZIP:
         description: 'ALT_ZIP (if you want to upload other files such as O*.zip , P*.zip else leave it "empty" )'
         required: true
