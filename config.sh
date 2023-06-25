@@ -9,4 +9,4 @@ export MAKEFILE=twrp_rk3328_box
 export TARGET=recoveryimage
 export OUTPUT=recovery.img
 export ALT_FILE=empty
-export RANDOM=23469
+export RANDOM=56834
